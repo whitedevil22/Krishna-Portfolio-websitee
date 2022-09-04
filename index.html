@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - KRISHNA JHA</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ef8ef8c098.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+
+        <video src="sheesh.mp4" muted loop autoplay class="back-video"></video>
+        <nav>
+            <img src="logo final kardo(2).jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#ABOUT">ABOUT</a></li>
+                <li><a href="#services">JOURNEY</a></li>
+                <li><a href="#Portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Hi I'm <span class="auto-input"></span></h1>
+        </div>
+        <div class="right-col">
+            <p> Click here to Listen</p>
+            <img src="play.png" id="icon">
+        </div>
+
+    </div>
+</div>
+<audio id="mySong">
+    <source src="song.mp3" type="audio/mp3">
+</audio>
+<script>
+    var mySong = document.getElementById("mySong");
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+        if(mySong.paused){
+            mySong.play();
+            icon.src = "pause.png";
+        }else{
+            mySong.pause();
+            icon.src = "play.png";
+        }
+    }
+</script>
+<!-- --------------about------------- -->
+<div id="ABOUT">
+    <div class="container">
+        <div class="row">
+            <div class="About-col-1">
+                <img src="my photo.jpg">
+            </div>
+            <div class="About-col-2">
+                <h1 class="sub-title">ABOUT ME</h1>
+                <p>Hello everyone this is Krishna Jha AKA WHITEDEVILL a enthusiast PROGRAMMER, ADOBE creative
+                    EDUCATOR, Wakelet Senior Community Member. I was Tech head of my School Computer club (Cyber Crew)
+                    I really love doing programming and learnt Python, C++, JAVA programming. By heart I am Gamer too.
+                    I like Playing Valorant. I also do Video editing and GFX artist also.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('SKILLS')">SKILLS</p>
+                    <p class="tab-links" onclick="opentab('EXPERIENCE')">EXPERIENCE</p>
+                    <p class="tab-links" onclick="opentab('EDUCATION')">EDUCATION</p>
+                </div>
+                <div class="tab-content active-tab" id="SKILLS">
+                    <ul>
+                        <li><span>UI/UX</span><br> Design web-app interface</li>
+                        <li><span>PYTHON PROGRAMMER</span><br> Advanced Python PROGRAMMER</li>
+                        <li><span>WEB  DEV</span><br> web-app developer</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="EXPERIENCE">
+                    <ul>
+                        <li><span>2020-2022</span><br>Python programming and made various projects</li>
+                        <li><span>2021-2022</span><br> WEB DEV</li>
+                        <li><span>2022-current</span><br>C++ programming</li>
+                        <li><span>2022-current</span><br>Full stack web development</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="EDUCATION">
+                    <ul>
+                        <li><span>2020</span><br>Done 10th from Seth Anandram Jaipuria School with 93.60% overall</li>
+                        <li><span>2022</span><br>Done 12th from Seth Anandram Jaipuria School with 90.2% overall</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------------services----------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My JOURNEY</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>WEB DESIGN</h2>
+                <p> Started Web designing back in 2020 and gained knowledge about 
+                    how to create website using HTML,CSS and javascript. Can make dynamic as well as static Website.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>PYTHON PROGRAMMING</h2>
+                <p> Started Web designing back in 2020 and gained knowledge about 
+                    how to create website using HTML,CSS and javascript. Can make dynamic as well as static Website.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p> Started Web designing back in 2020 and gained knowledge about 
+                    how to create website using HTML,CSS and javascript. Can make dynamic as well as static Website.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Portfolio------------------- -->
+<div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title">MY WORK</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-4.png">
+                <div class="layer">
+                    <h3>ONLINE AIRLINE TICKET BOOKING SYSTEM</h3>
+                    <p> This website helps you to book or cancel your ticket online
+                        also you can check the status of flight and route from where it 
+                        is going from where to where.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-5.png">
+                <div class="layer">
+                    <h3>FACE RECOGNITION APP</h3>
+                    <p> This website helps you to book or cancel your ticket online
+                        also you can check the status of flight and route from where it 
+                        is going from where to where.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-6.png">
+                <div class="layer">
+                    <h3>COVID-19 ANALYSIS(REAL TIME)</h3>
+                    <p> This website helps you to book or cancel your ticket online
+                        also you can check the status of flight and route from where it 
+                        is going from where to where.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- -------------------contact------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> Kjha2209@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/krish_white_devill/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/WHITEDEVILL2004"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/krishna-jha-1b7487209/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.reddit.com/user/WHITEDEVILL22"><i class="fa-brands fa-reddit"></i></a>
+                </div>
+                <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right"></div>
+            <form name="submit-to-google-sheet">
+                <input type="text" name="NAME" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+                <button type="SUBMIT" class="btn btn2">Submit</button>
+
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @Krishna. Made with <i class="fa-solid fa-heart"></i> UNPREDICTABILITY is in Blood</p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-content")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right= "0";
+    }
+    function closemenu(){
+        sidemenu.style.right= "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbymjKRq41gYItXYLDU9WuwkV2hWNvZgV99qErE1KMESM4FptaArjIURDUTSLdtrH7m6/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(fucntion()
+            ,5000)
+            msg.innerHTML = ""
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed(".auto-input",{
+        strings: ["KRISHNA JHA","WHITEDEVILL", "Web Developer", "Programmer"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true
+    })
+    </script>
+
+</body>
+</html>
+            
